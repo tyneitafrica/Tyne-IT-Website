@@ -1,3 +1,5 @@
+import Img from "/team-1.jpg"
+
 type teamMember = {
   name:string,
   role:string,
@@ -14,7 +16,7 @@ const teamMembers = [
     name: 'Walter White',
     role: 'Chief Executive Officer',
     description: 'Expert in strategic planning and corporate leadership, driving the company to success.',
-    img: 'assets/img/team/team-1.jpg',
+    img: Img,
     social: {
       twitter: '#',
       facebook: '#',
@@ -26,7 +28,7 @@ const teamMembers = [
     name: 'Sarah Johnson',
     role: 'Product Manager',
     description: 'Leading product development with a focus on innovation and customer satisfaction.',
-    img: 'assets/img/team/team-2.jpg',
+    img: Img,
     social: {
       twitter: '#',
       facebook: '#',
@@ -38,7 +40,7 @@ const teamMembers = [
     name: 'William Anderson',
     role: 'CTO',
     description: 'Innovating technology solutions with a passion for solving complex problems.',
-    img: 'assets/img/team/team-3.jpg',
+    img: Img,
     social: {
       twitter: '#',
       facebook: '#',
@@ -50,7 +52,7 @@ const teamMembers = [
     name: 'Amanda Jepson',
     role: 'Accountant',
     description: 'Ensuring financial integrity and overseeing all accounting functions.',
-    img: 'assets/img/team/team-4.jpg',
+    img: Img,
     social: {
       twitter: '#',
       facebook: '#',

@@ -44,7 +44,6 @@ export const Home = () => {
             <ProjectsCount/>
             <Partners/>
             <About/>
-            <WhyUsSection/>
             <Testimonials/>
             <Team/>
             <Contact/>

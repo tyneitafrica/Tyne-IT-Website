@@ -1,6 +1,7 @@
 import React from 'react';
 import 'swiper/css';
 import Swiper from 'swiper/bundle';
+import Img from "/testimonials-1.jpg"
 
 const Testimonials = () => {
   React.useEffect(() => {
@@ -45,7 +46,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="James Karanja" />
+                <img src={Img} className="testimonial-img" alt="James Karanja" />
                 <h3>James Karanja</h3>
                 <h4>Small Business Owner</h4>
                 <div className="stars">
@@ -65,7 +66,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="Susan Njeri" />
+                <img src={Img} className="testimonial-img" alt="Susan Njeri" />
                 <h3>Susan Njeri</h3>
                 <h4>Marketing Manager</h4>
                 <div className="stars">
@@ -85,7 +86,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="Michael Mwangi" />
+                <img src={Img} className="testimonial-img" alt="Michael Mwangi" />
                 <h3>Michael Mwangi</h3>
                 <h4>Entrepreneur</h4>
                 <div className="stars">
@@ -105,7 +106,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="Alice Ndungu" />
+                <img src={Img} className="testimonial-img" alt="Alice Ndungu" />
                 <h3>Alice Ndungu</h3>
                 <h4>Freelancer</h4>
                 <div className="stars">
@@ -125,7 +126,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="Peter Kamau" />
+                <img src={Img} className="testimonial-img" alt="Peter Kamau" />
                 <h3>Peter Kamau</h3>
                 <h4>Corporate Client</h4>
                 <div className="stars">

@@ -1,7 +1,5 @@
 import { Container } from "react-bootstrap";
-import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
-
+import Marquee from "react-fast-marquee";
 export const Partners = () => {
   const imageSources = ["../../../clients/client-1.png",
     "../../../clients/client-2.png",
@@ -14,48 +12,14 @@ export const Partners = () => {
   return (
     <section id="clients" className="clients section light-background">
       <Container data-aos="zoom-in">
-        <Swiper
-          loop={true}
-          speed={3000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          spaceBetween={20}
-          slidesPerView="auto"
-          freeMode={true}
-          breakpoints={{
-            320: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            480: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            640: {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            },
-            992: {
-              slidesPerView: 5,
-              spaceBetween: 20,
-            },
-            1200: {
-              slidesPerView: 6,
-              spaceBetween: 20,
-            },
-          }}
-        >
+        <Marquee>
 
           {imageSources.map(imageSrc => {
-              return <SwiperSlide>
+              return <img src={imageSrc} className="img-fluid" style={{width:'200px', margin:"0 20px"}} alt="" />
 
-              <img src={imageSrc} className="img-fluid" width={200} alt="" />
-            </SwiperSlide>
           })}
 
-        </Swiper>
+        </Marquee>
       </Container>
     </section>
   );
