@@ -1,11 +1,11 @@
 import heroImg from "../assets/img/hero-img.png";
-import About from "./About";
+
 import Contact from "./child-components/Contact";
+import HomeAbout from "./child-components/HomeAbout";
 import { Partners } from "./child-components/Partners";
 import ProjectsCount from "./child-components/ProjectsCount";
 import Team from "./child-components/Team";
 import Testimonials from "./child-components/Testimonials";
-import WhyUsSection from "./child-components/WhyUs";
 
 
 export const Home = () => {
@@ -43,7 +43,7 @@ export const Home = () => {
             </section>
             <ProjectsCount/>
             <Partners/>
-            <About/>
+            <HomeAbout/>
             <Testimonials/>
             <Team/>
             <Contact/>

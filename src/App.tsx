@@ -8,6 +8,7 @@ import { Services } from './components/Services';
 import { Portfolio } from './components/Portfolio';
 import { ProjectDetails } from './components/ProjectDetails';
 import About from './components/About';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />}></Route>

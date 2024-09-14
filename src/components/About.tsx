@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Img from '/project1.jpg'
 
 const About = () => {
@@ -106,5 +105,3 @@ const About = () => {
 };
 
 export default About;
-
-
