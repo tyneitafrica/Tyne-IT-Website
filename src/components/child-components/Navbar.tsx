@@ -1,6 +1,9 @@
 import tyneLogo from '../../assets/img/tyne.ico'
 import { NavLink } from 'react-router-dom'
+import { Fade as Hamburger } from "hamburger-react"
+import { useState } from 'react'
 export const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
@@ -48,7 +51,14 @@ export const NavBar = () => {
             </li>
             <li><NavLink to="portfolio">Portfolio</NavLink></li>
           </ul>
-          <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <Hamburger
+            toggled={isMenuOpen}
+            toggle={setIsMenuOpen}
+            direction="right"
+            size={28}
+            color="#666"
+            className = "d-xl-none"
+          />
         </nav>
 
         <a className="btn-getstarted" href="#about">Get Started</a>
