@@ -1,3 +1,46 @@
+.max-h-0 {
+    max-height: 0;
+}
+
+.max-h-screen {
+    max-height: 100vh;
+    
+}
+
+.top-16 {
+    top: 4rem;
+}
+
+.transition-base {
+    transition: max-height 0.7s ease-in-out;
+}
+
+.mobileNav-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom: var(--accent-color) 2px solid;
+}
+
+.mobileNav-ul li a, .mobileNav-ul li a:focus {
+    color: var(--nav-color);
+    padding: 8px 0px;
+    font-size: 15px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+
+}
+
+.mobileNav-ul li:hover > a, .mobileNav-ul .active, .mobileNav-ul .active:focus {
+    color: var(--nav-hover-color);
+}
 
 
 .single-projects-box {
@@ -32,7 +75,8 @@
     border-radius: 50%;
 }
 
-.single-projects-box .plus-icon a span:after, .single-projects-box .plus-icon a span:before {
+.single-projects-box .plus-icon a span:after,
+.single-projects-box .plus-icon a span:before {
     position: absolute;
     content: "";
     width: 2px;
@@ -90,6 +134,7 @@
 .projects-details-desc {
     margin-top: 5px;
 }
+
 .projects-details-desc p {
     color: #737b9a;
     font-size: 16px;
@@ -213,6 +258,7 @@
 .about-content .features-list li span:hover i {
     background-color: #42b83e;
 }
+
 .about-content .features-list li span i {
     font-size: 12px;
     color: #fff;
@@ -272,29 +318,36 @@
     .about-inner-area {
         margin-top: 5px;
     }
+
     .default-btn {
         font-size: 15px;
         padding: 15px 30px 11px;
     }
+
     .about-text {
         margin-top: 30px;
     }
+
     .about-text h3 {
         font-size: 20px;
     }
+
     .about-content {
         margin-top: 35px;
         padding-left: 0;
         text-align: center;
     }
+
     .about-content .sub-title {
         font-size: 14px;
     }
+
     .about-inner-area {
         margin-top: 5px;
     }
 
 }
+
 .default-btn {
     border: none;
     position: relative;
@@ -322,10 +375,12 @@
     font-size: 15px;
 }
 
-.default-btn:focus span, .default-btn:hover span {
+.default-btn:focus span,
+.default-btn:hover span {
     width: 225%;
     height: 562.5px;
 }
+
 .default-btn span {
     position: absolute;
     display: block;
@@ -344,25 +399,27 @@
         width: 18px;
         height: 18px;
     }
+
     .single-projects-box .plus-icon a {
         width: 50px;
         height: 50px;
         top: 15px;
         right: 15px;
     }
+
     .single-projects-box .projects-content {
         bottom: 10px;
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .projects-details-desc .project-details-info {
         margin-top: 15px;
     }
+
     .projects-details-desc .project-details-info .single-info-box {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
         margin-top: 15px;
     }
 }
-
-
