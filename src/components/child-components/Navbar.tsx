@@ -2,8 +2,10 @@ import tyneLogo from '../../assets/img/tyne.ico'
 import { NavLink } from 'react-router-dom'
 import { Fade as Hamburger } from "hamburger-react"
 import { useState } from 'react'
+import { MobileNav } from './MobileNav'
+import { DeskNav } from './DeskNav'
 export const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="container-fluid container-xl position-relative d-flex align-items-center">
@@ -13,56 +15,21 @@ export const NavBar = () => {
         </NavLink>
 
         <nav id="navmenu" className="navmenu">
-          <ul>
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="about">About</NavLink></li>
-            <li className="dropdown"><NavLink to="services"><span>Services</span> <i className="bi bi-chevron-down toggle-dropdown"></i></NavLink>
-              <ul>
-                <li><a href="#">Web development</a></li>
-                <li><a href="#">Database Management</a></li>
-                <li><a href="#">Api Development</a></li>
-              </ul>
-            </li>
-
-            <li className="dropdown">
-              <a href="#"><span>IT Support</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-              <li className="dropdown">
-                  <a href="#"><span>IT consulting</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Technology RoadMapping</a></li>
-                    <li><a href="#">Cost optimization</a></li>
-                    <li><a href="#">Digital Transformation</a></li>
-                  </ul>
-                </li>
-                <li className="dropdown">
-                  <a href="#"><span>IT support for Schools</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Hardware and software support</a></li>
-                    <li><a href="#">Network Management</a></li>
-                    <li><a href="#">Data Backup & Recovery</a></li>
-                    <li><a href="#">Cyber security solutions</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Software Installation</a></li>
-                <li><a href="#">Vendor Management</a></li>
-                <li><a href="#">IT procument</a></li>
-              </ul>
-            </li>
-            <li><NavLink to="portfolio">Portfolio</NavLink></li>
-          </ul>
-          <Hamburger
+          <DeskNav/>
+          <div className='d-xl-none'>
+        <Hamburger
             toggled={isMenuOpen}
             toggle={setIsMenuOpen}
             direction="right"
             size={28}
             color="#666"
-            className = "d-xl-none"
+            
           />
+        </div>
         </nav>
+        <MobileNav isMenuOpen={isMenuOpen}/>
 
         <a className="btn-getstarted" href="#about">Get Started</a>
-
       </div>
     </header>
   )
