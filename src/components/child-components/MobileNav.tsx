@@ -1,13 +1,21 @@
 import { NavLink } from "react-router-dom";
 import { DropdownComponent } from "./DropDown";
+import { useContext, useState } from "react";
+import { MenuOpenContext } from "./Navbar";
 
-export const MobileNav = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
+
+export const MobileNav = () => {
+  const [overflow, setOverflow] = useState<boolean>(false);
+  const {isMenuOpen} = useContext(MenuOpenContext);
   const servicesChildren = [
     { title: "Web development", link: "/" },
     { title: "Database Development", link: "/" },
     { title: "Api Development", link: "/" },
   ];
   const itSupportChildren = [
+    { title: "Software Installation", link: "/" },
+    { title: "Vendor Management", link: "/" },
+    { title: "IT procument", link: "/" },
     {
       title: "IT consulting",
       link: "/",
@@ -27,15 +35,13 @@ export const MobileNav = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
         { title: "Cyber security solutions", link: "/" },
       ],
     },
-    { title: "Software Installation", link: "/" },
-    { title: "Vendor Management", link: "/" },
-    { title: "IT procument", link: "/" },
+    
   ];
   return (
     <ul
       className={`${
-        isMenuOpen ? "max-h-screen" : "max-h-0 overflow-hidden border-0"
-      } d-flex flex-column bg-white d-xl-none position-absolute  top-16 end-0 start-0  px-4 text-capitalize text-small text-muted w-100 transition-base mobileNav-ul`}
+        isMenuOpen ? "max-h-screen" : "max-h-0 border-0"
+      } ${overflow?'overflow-visible':'overflow-hidden'} d-flex flex-column bg-white d-xl-none position-absolute  top-16 end-0 start-0  px-4 text-capitalize text-small text-muted w-100 transition-base mobileNav-ul`}
     >
       <li>
         <NavLink to="/">Home</NavLink>
@@ -43,8 +49,8 @@ export const MobileNav = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
       <li>
         <NavLink to="about">About</NavLink>
       </li>
-      <DropdownComponent linkTo="services" linkToChildren={servicesChildren} />
-      <DropdownComponent linkTo="services" linkToChildren={itSupportChildren} />
+      <DropdownComponent linkTo="services" linkToChildren={servicesChildren} overflow={overflow} setOverflow={setOverflow}/>
+      <DropdownComponent linkTo="services" linkToChildren={itSupportChildren} overflow={overflow} setOverflow={setOverflow}/>
       <li>
         <NavLink to="portfolio">Portfolio</NavLink>
       </li>
