@@ -9,6 +9,9 @@ import { Portfolio } from './components/Portfolio';
 import { ProjectDetails } from './components/ProjectDetails';
 import About from './components/About';
 import ScrollToTop from './components/ScrollToTop';
+import { WebDev } from './components/ServiceDetails/WebDev';
+import { MobileApp } from './components/ServiceDetails/MobileApp';
+import { EcommerceDev } from './components/ServiceDetails/Ecommerce';
 
 function App() {
   useEffect(() => {
@@ -28,6 +31,9 @@ function App() {
           <Route path='services' element={<Services />} />
           <Route path='portfolio'element={<Portfolio/>}/>
           <Route path='portfolio/:projectname' element={<ProjectDetails/>}/>
+          <Route path='/services/Web design & Development' element={<WebDev/>}/>
+          <Route path='/services/Mobile App Development' element={<MobileApp/>}/>
+          <Route path='/services/Ecommerce' element={<EcommerceDev/>}/>
 
         </Route>
       </Routes>
