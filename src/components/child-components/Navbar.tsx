@@ -13,11 +13,11 @@ interface MenuOpenContextType {
 
 export const MenuOpenContext = createContext<MenuOpenContextType>({
   isMenuOpen: false,
-  setIsMenuOpen: () => {
-  },
+  setIsMenuOpen: () => {},
 });
 export const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [requestQuote, setRequestQuote] = useState(false);
   return (
     <MenuOpenContext.Provider value={{ isMenuOpen, setIsMenuOpen }}>
       <header
@@ -45,9 +45,92 @@ export const NavBar = () => {
           </nav>
           <MobileNav />
 
-          <a className="btn-getstarted" href="#about">
+          <a
+            className="btn-getstarted"
+            onClick={() => setRequestQuote(!requestQuote)}
+          >
             Get Started
           </a>
+        </div>
+        <div className={`${requestQuote ? "open" : ""} request-quote d-flex flex-column p-4 py-5`}>
+          
+          <h2>Lets Discuss Your Project</h2>
+          <p>We will email or call you to discuss</p>
+          <form
+            action="forms/contact.php"
+            method="post"
+            className="php-email-form"
+          >
+            <div className="row gy-4 postion-relative">
+              <div className="request-quote-close">
+                <i
+                  className="bi bi-x-lg"
+                  onClick={() => setRequestQuote(!requestQuote)}
+                ></i>
+              </div>
+              <div className="col-md-6">
+                <label htmlFor="name-field" className="pb-2">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name-field"
+                  className="form-control"
+                  required
+                />
+              </div>
+
+              <div className="col-md-6">
+                <label htmlFor="email-field" className="pb-2">
+                  Your Email
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  name="email"
+                  id="email-field"
+                  required
+                />
+              </div>
+
+              <div className="col-md-12">
+                <label htmlFor="subject-field" className="pb-2">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="subject"
+                  id="subject-field"
+                  required
+                />
+              </div>
+
+              <div className="col-md-12">
+                <label htmlFor="message-field" className="pb-2">
+                  Message
+                </label>
+                <textarea
+                  className="form-control"
+                  name="message"
+                  rows={10}
+                  id="message-field"
+                  required
+                ></textarea>
+              </div>
+
+              <div className="col-md-12 text-center">
+                <div className="loading">Loading</div>
+                <div className="error-message"></div>
+                <div className="sent-message">
+                  Your message has been sent. Thank you!
+                </div>
+
+                <button className="request-quote-submit" type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
         </div>
       </header>
     </MenuOpenContext.Provider>

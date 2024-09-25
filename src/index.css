@@ -1,3 +1,48 @@
+.request-quote{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color:white;
+    max-width: 500px;
+    transform: translateX(200%);
+    transition: transform 0.5s ease-in-out;
+    border-left: 2px solid gray;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.request-quote.open{
+    transform: translateX(0%);
+}
+.request-quote-close{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 35px;
+    color: #212529;
+    cursor: pointer;
+    width: 48px;
+}
+
+.request-quote .form-control{
+    border: 1px solid #a2a2a3;
+}
+
+.request-quote .form-control:focus{
+    border: var(--accent-color) 1px solid;
+    box-shadow: none;
+}
+
+.request-quote-submit{
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
 .tooltip {
   /* position: absolute;
   top: 10px;
