@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 
@@ -59,7 +61,10 @@ export const CountriesWeWork = () => {
                       style={{
                         default: {
                           fill: countryColorMap[countryCode.name] || "#343a40",
-                        }, // Add default fill
+                        },
+                        hover: {
+                          fill: "#007BFF",
+                        }
                       }}
                     />
                   );
