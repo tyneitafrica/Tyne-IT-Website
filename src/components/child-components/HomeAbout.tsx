@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const HomeAbout = () => {
   return (
-    <section id="about" className="about section" style={{ marginTop: '90px' }}>
+    <section id="about" className="about section" style={{ marginTop: '14px' }}>
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
         <h2>About Us</h2>
@@ -11,7 +11,7 @@ const HomeAbout = () => {
 
       <div className="container">
         <div className="row gy-4">
-          <div className="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+          <div className="col-lg-6 content" data-aos="fade-up" data-aos-delay="0">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
@@ -29,7 +29,7 @@ const HomeAbout = () => {
             </ul>
           </div>
 
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="0">
             <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>

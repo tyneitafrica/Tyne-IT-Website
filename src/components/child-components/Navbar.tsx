@@ -6,6 +6,7 @@ import { MobileNav } from "./MobileNav";
 import { DeskNav } from "./DeskNav";
 import { createContext } from "react";
 import { RequestQuote } from "./RequestQuote";
+import { MobileNav1 } from "./MobileNav1";
 
 interface MenuOpenContextType {
   isMenuOpen: boolean;
@@ -49,8 +50,8 @@ export const NavBar = () => {
             </div>
             <RequestQuote />
           </nav>
-          <MobileNav />
-
+          {/* <MobileNav /> */}
+          <MobileNav1 />
           <button
             className="btn-getstarted"
             onClick={() => setRequestQuote(!requestQuote)}
