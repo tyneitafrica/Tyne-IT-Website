@@ -22,13 +22,13 @@ export const DeskNav = () => {
             </a>
             <ul>
               <li>
-                <Link to="/services/Web design & Development">Web Design & Development</Link>
+                <Link to="/services/web-dev">Web Design & Development</Link>
               </li>
               <li>
-              <Link to="/services/Mobile App Development">Mobile App Development</Link>
+              <Link to="/services/mobile-dev">Mobile App Development</Link>
               </li>
               <li>
-              <Link to="/services/Ecommerce">Ecommerce Development/Integration</Link>
+              <Link to="/services/ecommerce-dev">Ecommerce Development/Integration</Link>
               </li>
             </ul>
           </li>

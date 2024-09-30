@@ -31,9 +31,9 @@ function App() {
           <Route path='services' element={<Services />} />
           <Route path='portfolio'element={<Portfolio/>}/>
           <Route path='portfolio/:projectname' element={<ProjectDetails/>}/>
-          <Route path='/services/Web design & Development' element={<WebDev/>}/>
-          <Route path='/services/Mobile App Development' element={<MobileApp/>}/>
-          <Route path='/services/Ecommerce' element={<EcommerceDev/>}/>
+          <Route path='/services/web-dev' element={<WebDev/>}/>
+          <Route path='/services/mobile-dev' element={<MobileApp/>}/>
+          <Route path='/services/ecommerce-dev' element={<EcommerceDev/>}/>
 
         </Route>
       </Routes>

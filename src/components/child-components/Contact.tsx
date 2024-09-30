@@ -53,7 +53,7 @@ const Contact = () => {
 
           <div className="col-lg-7">
             <form
-              action="forms/contact.php"
+              action="https://formspree.io/f/xwkjpnaw"
               method="post"
               className="php-email-form"
               data-aos="fade-up"

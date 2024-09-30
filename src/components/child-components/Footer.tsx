@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export const Footer = ()=>{
     return (
         <footer id="footer" className="footer">
@@ -19,24 +20,23 @@ export const Footer = ()=>{
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i className="bi bi-chevron-right"></i> <Link to="/">Home</Link></li>
+              <li><i className="bi bi-chevron-right"></i> <Link to="about">About us</Link></li>
+              <li><i className="bi bi-chevron-right"></i> <Link to="services">Services</Link></li>
+              <li><i className="bi bi-chevron-right"></i> <Link to="portfolio">Portfolio</Link></li>
             </ul>
           </div>
 
-          <div className="col-lg-2 col-md-3 footer-links">
+          <div className="col-lg-3 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i className="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i className="bi bi-chevron-right"></i> <Link to="services/web-dev">Web Development</Link></li>
+              <li><i className="bi bi-chevron-right"></i> <Link to="services/mobile-dev">Mobile App Development</Link></li>
+              <li><i className="bi bi-chevron-right"></i> <Link to="services/ecommerce-dev">Ecommerce Development</Link></li>
             </ul>
           </div>
 
-          <div className="col-lg-4 col-md-12">
+          <div className="col-lg-3 col-md-12">
             <h4>Follow Us</h4>
             <p>Find us in your favorite platform</p>
             <div className="social-links d-flex">
