@@ -1,4 +1,4 @@
-import tyneLogo from "../../assets/img/tyne.ico";
+import tyneLogo from "/tyne.ico";
 import { NavLink } from "react-router-dom";
 import { Fade as Hamburger } from "hamburger-react";
 import { useState } from "react";
