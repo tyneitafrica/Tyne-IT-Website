@@ -1,59 +1,211 @@
 import { NavLink } from "react-router-dom";
-import { DropdownComponent } from "./DropDown";
-import { useContext, useState } from "react";
 import { MenuOpenContext } from "./Navbar";
-
-
+import { useContext } from "react";
+import { Accordion } from "react-bootstrap";
+import tyneLogo from "/tyne.ico";
 export const MobileNav = () => {
-  const [overflow, setOverflow] = useState<boolean>(false);
-  const {isMenuOpen} = useContext(MenuOpenContext);
-  const servicesChildren = [
-    { title: "Web development", link: "/" },
-    { title: "Database Development", link: "/" },
-    { title: "Api Development", link: "/" },
-  ];
-  const itSupportChildren = [
-    { title: "Software Installation", link: "/" },
-    { title: "Vendor Management", link: "/" },
-    { title: "IT procument", link: "/" },
-    {
-      title: "IT consulting",
-      link: "/",
-      children: [
-        { title: "Technology RoadMapping", link: "/" },
-        { title: "Cost optimization", link: "/" },
-        { title: "Digital Transformation", link: "/" },
-      ],
-    },
-    {
-      title: "IT support for Schools",
-      link: "/",
-      children: [
-        { title: "Hardware and software support", link: "/" },
-        { title: "Network Management", link: "/" },
-        { title: "Data Backup & Recovery", link: "/" },
-        { title: "Cyber security solutions", link: "/" },
-      ],
-    },
-    
-  ];
+  const menuOpenContext = useContext(MenuOpenContext);
+  const { isMenuOpen, setIsMenuOpen } = menuOpenContext;
+  const isDisabled = true;
   return (
-    <ul
-      className={`${
-        isMenuOpen ? "max-h-screen" : "max-h-0 border-0"
-      } ${overflow?'overflow-visible':'overflow-hidden'} d-flex flex-column bg-white d-xl-none position-absolute  top-16 end-0 start-0  px-4 text-capitalize text-small text-muted w-100 transition-base mobileNav-ul`}
-    >
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="about">About</NavLink>
-      </li>
-      <DropdownComponent linkTo="services" linkToChildren={servicesChildren} overflow={overflow} setOverflow={setOverflow}/>
-      <DropdownComponent linkTo="services" linkToChildren={itSupportChildren} overflow={overflow} setOverflow={setOverflow}/>
-      <li>
-        <NavLink to="portfolio">Portfolio</NavLink>
-      </li>
-    </ul>
+    <div className={`mobile-slide ${isMenuOpen ? "open" : ""}`}>
+      <NavLink
+        to="/" onClick={() => setIsMenuOpen(false)}       className="logo d-flex align-items-center me-auto pt-1 pb-2"
+      >
+        <h1 className="sitename">
+          <img src={tyneLogo} alt="tyneIT Logo" />
+        </h1>
+      </NavLink>
+      <ul className="mobileNav-ul">
+        <li>
+          <NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="about" onClick={() => setIsMenuOpen(false)}>About</NavLink>
+        </li>
+        <Accordion as={"ul"} className="mobileNav-ul" defaultActiveKey={"0"}>
+          <Accordion.Item as={"li"} eventKey="0">
+            <Accordion.Header
+              as={NavLink}
+              to={"/services"}
+              onClick={(e) => isDisabled && e.preventDefault()}
+            >
+              Services
+            </Accordion.Header>
+            <Accordion.Body as={"ul"} className="mobileNav-ul">
+              {/* Software Development */}
+              <Accordion as={"ul"} className="mobileNav-ul">
+                <Accordion.Item as={"li"} eventKey="0">
+                  <Accordion.Header
+                    as={NavLink}
+                    to={"/services"}
+                    onClick={(e) => isDisabled && e.preventDefault()}
+                  >
+                    Software Development
+                  </Accordion.Header>
+                  <Accordion.Body as={"ul"}>
+                    <li>
+                      <NavLink to="/services/web-dev" onClick={() => setIsMenuOpen(false)}>
+                        Web Design & Development
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/services/mobile-dev" onClick={() => setIsMenuOpen(false)}>
+                        Mobile App Development
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/services/ecommerce-dev" onClick={() => setIsMenuOpen(false)}>
+                        Ecommerce Development/Integration
+                      </NavLink>
+                    </li>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+              {/* IT Support */}
+              <Accordion as={"ul"} className="mobileNav-ul">
+                <Accordion.Item as={"li"} eventKey="0">
+                  <Accordion.Header
+                    as={NavLink}
+                    to={"/services"}
+                    onClick={(e) => isDisabled && e.preventDefault()}
+                  >
+                    IT support
+                  </Accordion.Header>
+                  <Accordion.Body as={"ul"}>
+                    <Accordion as={"ul"} className="mobileNav-ul">
+                      <Accordion.Item as={"li"} eventKey="0">
+                        <Accordion.Header
+                          as={NavLink}
+                          to={"/services"}
+                          onClick={(e) => isDisabled && e.preventDefault()}
+                        >
+                          IT consulting
+                        </Accordion.Header>
+                        <Accordion.Body as={"ul"}>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+                              Technology RoadMapping
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>Cost optimization</NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+                              Digital Transformation
+                            </NavLink>
+                          </li>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                    <Accordion as={"ul"} className="mobileNav-ul">
+                      <Accordion.Item as={"li"} eventKey="0">
+                        <Accordion.Header
+                          as={NavLink}
+                          to={"/services"}
+                          onClick={(e) => isDisabled && e.preventDefault()}
+                        >
+                          IT consulting for schools
+                        </Accordion.Header>
+                        <Accordion.Body as={"ul"}>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+                              Hardware and software support
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>Network Management</NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+                              Data Backup & Recovery
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+                              Data Backup & Recovery
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/services" onClick={() => setIsMenuOpen(false)}>
+                              Cyber security solutions
+                            </NavLink>
+                          </li>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                    <li>
+                      <NavLink to="" onClick={() => setIsMenuOpen(false)}>
+                        Software Installation
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="" onClick={() => setIsMenuOpen(false)}>
+                        Vendor Management
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="" onClick={() => setIsMenuOpen(false)}>
+                        IT procument
+                      </NavLink>
+                    </li>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+              <li>
+                <NavLink to="/services">Data/Business analytics</NavLink>
+              </li>
+              <li>
+                <NavLink to="/services">Outsourcing services</NavLink>
+              </li>
+              <li>
+                <NavLink to="/services">Learning & development support</NavLink>
+              </li>
+              <li>
+                <NavLink to="/services">OEM reseller services</NavLink>
+              </li>
+              <li>
+                <NavLink to="/services">Software asset management</NavLink>
+              </li>
+              <li>
+                <NavLink to="/services">IT equipment leasing</NavLink>
+              </li>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <Accordion as={"ul"} className="mobileNav-ul">
+          <Accordion.Item as={"li"} eventKey="0">
+            <Accordion.Header
+              as={NavLink}
+              to={"/services"}
+              onClick={(e) => isDisabled && e.preventDefault()}
+            >
+              IT solutions
+            </Accordion.Header>
+            <Accordion.Body as={"ul"}>
+              <li>
+                <NavLink to="">
+                  Procurement Solutions
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="">
+                  HRM solutions
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="">
+                  IT procurement & sourcing services
+                </NavLink>
+              </li>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+        <li>
+          <NavLink to="portfolio">Portfolio</NavLink>
+        </li>
+      </ul>
+    </div>
   );
 };

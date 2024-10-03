@@ -2,11 +2,10 @@ import tyneLogo from "/tyne.ico";
 import { NavLink } from "react-router-dom";
 import { Fade as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import { MobileNav } from "./MobileNav";
 import { DeskNav } from "./DeskNav";
 import { createContext } from "react";
 import { RequestQuote } from "./RequestQuote";
-import { MobileNav1 } from "./MobileNav1";
+import { MobileNav } from "./MobileNav";
 
 interface MenuOpenContextType {
   isMenuOpen: boolean;
@@ -50,8 +49,8 @@ export const NavBar = () => {
             </div>
             <RequestQuote />
           </nav>
-          {/* <MobileNav /> */}
-          <MobileNav1 />
+        
+          <MobileNav/>
           <button
             className="btn-getstarted"
             onClick={() => setRequestQuote(!requestQuote)}
