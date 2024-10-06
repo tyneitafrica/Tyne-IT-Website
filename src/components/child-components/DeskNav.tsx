@@ -39,10 +39,10 @@ export const DeskNav = () => {
             </a>
             <ul>
               <li className="dropdown">
-                <a href="#">
+                <NavLink to={'/services/it-consulting'}>
                   <span>IT consulting</span>{" "}
                   <i className="bi bi-chevron-down toggle-dropdown"></i>
-                </a>
+                </NavLink>
                 <ul>
                   <li>
                     <a href="#">Technology RoadMapping</a>
@@ -56,10 +56,10 @@ export const DeskNav = () => {
                 </ul>
               </li>
               <li className="dropdown">
-                <a href="#">
+                <Link to="/services/school-support">
                   <span>IT support for Schools</span>{" "}
                   <i className="bi bi-chevron-down toggle-dropdown"></i>
-                </a>
+                </Link>
                 <ul>
                   <li>
                     <a href="#">Hardware and software support</a>
@@ -76,24 +76,24 @@ export const DeskNav = () => {
                 </ul>
               </li>
               <li>
-                <a href="#">Software Installation</a>
+                <Link to="/services/software-installation">Software Installation</Link>
               </li>
               <li>
-                <a href="#">Vendor Management</a>
+                <Link to="/services/vendor-management">Vendor Management</Link>
               </li>
               <li>
-                <a href="#">IT procument</a>
+                <Link to="/services/it-procurement">IT procument</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">Data/Business analytics</a>
+            <a href="#">Data analytics</a>
           </li>
           <li>
             <a href="#">Outsourcing services</a>
           </li>
           <li>
-            <a href="#">Learning & development support</a>
+            <Link to="services/learning-courses">Learning  courses</Link>
           </li>
           <li>
             <a href="#">OEM reseller services</a>

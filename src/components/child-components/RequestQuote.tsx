@@ -78,7 +78,7 @@ export const RequestQuote = () => {
             </div>
 
             <button className="request-quote-submit" type="submit">
-              Send Message
+              Request Quote
             </button>
           </div>
         </div>

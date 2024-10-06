@@ -12,6 +12,12 @@ import ScrollToTop from './components/ScrollToTop';
 import { WebDev } from './components/ServiceDetails/WebDev';
 import { MobileApp } from './components/ServiceDetails/MobileApp';
 import { EcommerceDev } from './components/ServiceDetails/Ecommerce';
+import { Consulting } from './components/ServiceDetails/Consulting';
+import { SchoolSupport } from './components/ServiceDetails/SchoolSupport';
+import { SoftwareInstallation } from './components/ServiceDetails/SoftwareInstallation';
+import { VendorManagement } from './components/ServiceDetails/Vendor';
+import { Procurement } from './components/ServiceDetails/Procurement';
+import { Courses } from './components/ServiceDetails/Courses';
 
 function App() {
   useEffect(() => {
@@ -34,6 +40,12 @@ function App() {
           <Route path='/services/web-dev' element={<WebDev/>}/>
           <Route path='/services/mobile-dev' element={<MobileApp/>}/>
           <Route path='/services/ecommerce-dev' element={<EcommerceDev/>}/>
+          <Route path='/services/it-consulting' element={<Consulting/>}/>
+          <Route path='/services/school-support' element={<SchoolSupport/>}/>
+          <Route path='/services/software-installation' element={<SoftwareInstallation/>}/>
+          <Route path='/services/vendor-management' element={<VendorManagement/>}/>
+          <Route path='/services/it-procurement' element={<Procurement/>}/>
+          <Route path='/services/learning-courses' element={<Courses/>} />
 
         </Route>
       </Routes>

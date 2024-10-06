@@ -55,7 +55,7 @@ export const NavBar = () => {
             className="btn-getstarted"
             onClick={() => setRequestQuote(!requestQuote)}
           >
-            Get Started
+            Request Quote
           </button>
         </div>
         
