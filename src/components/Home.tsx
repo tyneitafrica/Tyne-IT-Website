@@ -42,9 +42,9 @@ export const Home = () => {
                     </div>
                 </div>
             </section>
-            <ProjectsCount/>
-            <Partners/>
             <HomeAbout/>
+            <ProjectsCount/>
+            <Partners/> 
             <Testimonials/>
             <Team/>
             <CountriesWeWork/>

@@ -2,7 +2,7 @@ import Img from '/project1.jpg'
 
 const About = () => {
   return (
-    <section id="about" className="about section" style={{ marginTop: '90px' }}>
+    <section id="about" className="about section" style={{ marginTop: '14px' }}>
       <div className="container">
         <div className="row align-items-center">
 

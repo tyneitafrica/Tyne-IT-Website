@@ -39,10 +39,10 @@ export const DeskNav = () => {
             </a>
             <ul>
               <li className="dropdown">
-                <a href="#">
+                <NavLink to={'/services/it-consulting'}>
                   <span>IT consulting</span>{" "}
                   <i className="bi bi-chevron-down toggle-dropdown"></i>
-                </a>
+                </NavLink>
                 <ul>
                   <li>
                     <a href="#">Technology RoadMapping</a>
@@ -56,10 +56,10 @@ export const DeskNav = () => {
                 </ul>
               </li>
               <li className="dropdown">
-                <a href="#">
+                <Link to="/services/school-support">
                   <span>IT support for Schools</span>{" "}
                   <i className="bi bi-chevron-down toggle-dropdown"></i>
-                </a>
+                </Link>
                 <ul>
                   <li>
                     <a href="#">Hardware and software support</a>
@@ -76,33 +76,33 @@ export const DeskNav = () => {
                 </ul>
               </li>
               <li>
-                <a href="#">Software Installation</a>
+                <Link to="/services/software-installation">Software Installation</Link>
               </li>
               <li>
-                <a href="#">Vendor Management</a>
+                <Link to="/services/vendor-management">Vendor Management</Link>
               </li>
               <li>
-                <a href="#">IT procument</a>
+                <Link to="/services/it-procurement">IT procument</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#">Data/Business analytics</a>
+            <Link to="/services/data-analytics">Data analytics</Link>
           </li>
           <li>
-            <a href="#">Outsourcing services</a>
+            <Link to="/services/outsourcing">Outsourcing services</Link>
           </li>
           <li>
-            <a href="#">Learning & development support</a>
+            <Link to="services/learning-courses">Learning  courses</Link>
           </li>
           <li>
-            <a href="#">OEM reseller services</a>
+            <Link to="services/oem-reseller">OEM reseller services</Link>
           </li>
           <li>
-            <a href="#">Software asset management</a>
+            <Link to="/services/software-management">Software management</Link>
           </li>
           <li>
-            <a href="#">IT equipment leasing</a>
+            <Link to="/services/equipment-leasing">IT equipment leasing</Link>
           </li>
         </ul>
       </li>
@@ -113,13 +113,13 @@ export const DeskNav = () => {
         </a>
         <ul>
           <li>
-            <a href="#">Procurement Solutions</a>
+            <Link to="/services/it-procurement">Procurement Solutions</Link>
           </li>
           <li>
-            <a href="#">HRM solutions</a>
+            <Link to="services/hrm">HRM solutions</Link>
           </li>
           <li>
-            <a href="#">IT procurement & sourcing services</a>
+            <Link to = "/services/it-procurement">IT procurement & sourcing services</Link>
           </li>
         </ul>
       </li>
