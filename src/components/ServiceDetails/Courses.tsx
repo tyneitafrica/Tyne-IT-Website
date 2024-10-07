@@ -18,7 +18,7 @@ export function Courses() {
           </div>
           <div className="overview-content">
             <div className="content right-content">
-              <h2>Vendor Management</h2>
+              <h2>Learning courses</h2>
               <p>
                 we offer a wide range of courses designed to empower individuals
                 and businesses with the technical skills needed to thrive in
@@ -47,66 +47,51 @@ export function Courses() {
                   Integration
                 </li>
               </ul>
-              <div className="learning-courses mt-4">
-                <h3>Learning Courses Samples</h3>
-                <div className="row">
-                  <div className="col-md-4 mb-3">
-                    <div className="card">
-                      <img
-                        src="/course1.jpg"
-                        className="card-img-top"
-                        alt="Course 1"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">Cybersecurity Basics</h5>
-                        <p className="card-text">
-                          Learn the fundamentals of cybersecurity and protect
-                          your digital assets.
-                        </p>
-                        <a href="#" className="btn btn-primary">
-                          Learn More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-3">
-                    <div className="card">
-                      <img
-                        src="/course2.jpg"
-                        className="card-img-top"
-                        alt="Course 2"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">Cloud Computing</h5>
-                        <p className="card-text">
-                          Understand the basics of cloud computing and its
-                          applications.
-                        </p>
-                        <a href="#" className="btn btn-primary">
-                          Learn More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 mb-3">
-                    <div className="card">
-                      <img
-                        src="/course3.jpg"
-                        className="card-img-top"
-                        alt="Course 3"
-                      />
-                      <div className="card-body">
-                        <h5 className="card-title">Software Development</h5>
-                        <p className="card-text">
-                          Get started with software development and build your
-                          first application.
-                        </p>
-                        <a href="#" className="btn btn-primary">
-                          Learn More
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+        </div>
+        <div className="learning-courses mt-4">
+          <h3>Learning Courses Samples</h3>
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">Cybersecurity Basics</h5>
+                  <p className="card-text">
+                    Learn the fundamentals of cybersecurity and protect your
+                    digital assets.
+                  </p>
+                  <a href="#" className="btn btn-primary">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">Cloud Computing</h5>
+                  <p className="card-text">
+                    Understand the basics of cloud computing and its
+                    applications.
+                  </p>
+                  <a href="#" className="btn btn-primary">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">Software Development</h5>
+                  <p className="card-text">
+                    Get started with software development and build your first
+                    application.
+                  </p>
+                  <a href="#" className="btn btn-primary">
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>

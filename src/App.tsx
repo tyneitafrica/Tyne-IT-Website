@@ -18,6 +18,11 @@ import { SoftwareInstallation } from './components/ServiceDetails/SoftwareInstal
 import { VendorManagement } from './components/ServiceDetails/Vendor';
 import { Procurement } from './components/ServiceDetails/Procurement';
 import { Courses } from './components/ServiceDetails/Courses';
+import { DataAnalytics } from './components/ServiceDetails/DataAnalytics';
+import { Outsourcing } from './components/ServiceDetails/Outsourcing';
+import { OEM } from './components/ServiceDetails/OEM';
+import { services } from './components/ServiceDetails/Others/services';
+import { Remaining } from './components/ServiceDetails/Others/Remaining';
 
 function App() {
   useEffect(() => {
@@ -46,6 +51,12 @@ function App() {
           <Route path='/services/vendor-management' element={<VendorManagement/>}/>
           <Route path='/services/it-procurement' element={<Procurement/>}/>
           <Route path='/services/learning-courses' element={<Courses/>} />
+          <Route path='/services/data-analytics' element={<DataAnalytics/>}/>
+          <Route path='/services/outsourcing' element={<Outsourcing/>}/>
+          <Route path='/services/oem-reseller' element={<OEM/>}/>
+          {services.map((service) => (
+            <Route path={service.path} element={<Remaining service={service}/>} />
+          ))}
 
         </Route>
       </Routes>

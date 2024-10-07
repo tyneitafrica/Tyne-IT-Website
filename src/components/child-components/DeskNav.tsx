@@ -87,22 +87,22 @@ export const DeskNav = () => {
             </ul>
           </li>
           <li>
-            <a href="#">Data analytics</a>
+            <Link to="/services/data-analytics">Data analytics</Link>
           </li>
           <li>
-            <a href="#">Outsourcing services</a>
+            <Link to="/services/outsourcing">Outsourcing services</Link>
           </li>
           <li>
             <Link to="services/learning-courses">Learning  courses</Link>
           </li>
           <li>
-            <a href="#">OEM reseller services</a>
+            <Link to="services/oem-reseller">OEM reseller services</Link>
           </li>
           <li>
-            <a href="#">Software asset management</a>
+            <Link to="/services/software-management">Software management</Link>
           </li>
           <li>
-            <a href="#">IT equipment leasing</a>
+            <Link to="/services/equipment-leasing">IT equipment leasing</Link>
           </li>
         </ul>
       </li>
@@ -113,13 +113,13 @@ export const DeskNav = () => {
         </a>
         <ul>
           <li>
-            <a href="#">Procurement Solutions</a>
+            <Link to="/services/it-procurement">Procurement Solutions</Link>
           </li>
           <li>
-            <a href="#">HRM solutions</a>
+            <Link to="services/hrm">HRM solutions</Link>
           </li>
           <li>
-            <a href="#">IT procurement & sourcing services</a>
+            <Link to = "/services/it-procurement">IT procurement & sourcing services</Link>
           </li>
         </ul>
       </li>
