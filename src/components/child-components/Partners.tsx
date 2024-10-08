@@ -12,6 +12,9 @@ export const Partners = () => {
   return (
     <section id="clients" className="clients section light-background">
       <Container data-aos="zoom-in">
+      <div className="container section-title" data-aos="fade-up">
+        <h2>Our Partners</h2>
+      </div>
         <Marquee>
 
           {imageSources.map(imageSrc => {
