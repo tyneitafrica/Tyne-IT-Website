@@ -20,9 +20,12 @@ export function MobileApp() {
             <div className="content right-content">
               <h2>Mobile App Development</h2>
               <p>
-                We believe seamless user interaction is key to a successful app.
-                Innovative design and an engaging user experience are the core
-                of our mobile app solutions.
+                Our mobile app development services are designed to create
+                intuitive, high-performance applications that meet the unique
+                needs of your business and enhance user experiences. We leverage
+                the latest technologies and industry best practices to deliver
+                custom mobile applications that seamlessly integrate with your
+                business operations.
               </p>
               <ul className="features-list list-unstyled">
                 <li>
@@ -33,10 +36,12 @@ export function MobileApp() {
                   <i className="bi bi-patch-check-fill me-2"></i> UI / UX Design
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Cross-Platform Development
+                  <i className="bi bi-patch-check-fill me-2"></i> Cross-Platform
+                  Development
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> ative App Development
+                  <i className="bi bi-patch-check-fill me-2"></i> ative App
+                  Development
                 </li>
                 <li>
                   <i className="bi bi-patch-check-fill me-2"></i> React Native

@@ -82,14 +82,7 @@ const About = () => {
                   TyneIT Consulting has grown from a small tech startup into a
                   trusted IT partner for businesses across various industries.
                   Our journey began with a passion for technology and a
-                  commitment to solving real-world business challenges through
-                  tailored IT services. Over time, we have expanded our
-                  expertise, adding software development, IT support, and
-                  procurement solutions to our portfolio. With a team of
-                  dedicated professionals and a growing list of satisfied
-                  clients, we continue to evolve, staying ahead of industry
-                  trends and driving digital transformation for businesses of
-                  all sizes.
+                  commitment to solve real-world business challenges.
                 </p>
                 <ul className="features-list">
                   <li>
@@ -139,8 +132,12 @@ const About = () => {
               <div className="about-text" data-aos="fade-up">
                 <h3>Who We Are</h3>
                 <p>
-                  Real innovations and a positive customer experience are the
-                  heart of successful communication.
+                  TyneIT Consulting is a leading IT consulting firm, providing
+                  innovative solutions that help businesses thrive in today’s
+                  digital landscape. We specialize in custom software
+                  development, IT support, and business analytics, working
+                  closely with clients to deliver results that drive growth and
+                  efficiency. 
                 </p>
                 <ul className="features-list">
                   <li>

@@ -28,16 +28,19 @@ export const Services = () => {
                 <i className="bi bi-window-fullscreen"></i>
               </div>
               <h4>
-                <Link to="/services/Web design & Development" className="">
+                <Link to="/services/web-dev" className="">
                   Web Development
                 </Link>
               </h4>
               <p>
-                Custom web solutions tailored to your business needs, from
-                responsive designs to powerful back-end systems using the latest
-                technologies like React and Next.js.
+                Our web design and development services are focused on creating
+                visually striking, user-friendly websites that enhance your
+                brand’s digital experience and drive customer engagement.
               </p>
-              <Link to="/services/Web design & Development" className="read-more">
+              <Link
+                to="/services/web-dev"
+                className="read-more"
+              >
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>
