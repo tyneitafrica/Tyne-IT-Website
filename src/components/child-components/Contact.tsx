@@ -40,7 +40,7 @@ const Contact = () => {
                 <i className="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+254 755 789 788</p>
+                  <p>+254 708661504</p>
                 </div>
               </div>
               {/* End Info Item */}
@@ -53,7 +53,7 @@ const Contact = () => {
                 <i className="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@tyneit.com</p>
+                  <p>info@tyneitconsulting.africa</p>
                 </div>
               </div>
               {/* End Info Item */}
@@ -71,7 +71,7 @@ const Contact = () => {
 
           <div className="col-lg-7">
             <form
-              action="https://formspree.io/f/xwkjpnaw"
+              action="https://formspree.io/f/xgvewjap"
               method="post"
               className="php-email-form"
               data-aos="fade-up"

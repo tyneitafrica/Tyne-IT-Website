@@ -13,7 +13,7 @@ export const Footer = ()=>{
               <p>A108 Upper Hill</p>
               <p>Nairobi, Kenya</p>
               <p className="mt-3"><strong>Phone:</strong> <span>+254 755 789 788</span></p>
-              <p><strong>Email:</strong> <span>tyneit.com</span></p>
+              <p><strong>Email:</strong> <span>info@tyneitconsulting.africa</span></p>
             </div>
           </div>
 

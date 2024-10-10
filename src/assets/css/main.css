@@ -880,6 +880,7 @@ section,
   display: flex;
   align-items: center;
   background-color: #fff;
+  margin-top: 60px;
 }
 
 .hero h1 {
