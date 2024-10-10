@@ -1,4 +1,4 @@
-import heroImg from "../assets/img/hero-img.png";
+import heroImg from "/logo2.jpeg";
 
 import Contact from "./child-components/Contact";
 import { CountriesWeWork } from "./child-components/CountriesWeWork";
@@ -11,7 +11,7 @@ import Testimonials from "./child-components/Testimonials";
 export const Home = () => {
   return (
     <>
-      <section id="hero" className="hero section dark-background">
+      <section id="hero" className="hero section dark-background" style={{backgroundImage:`url(${heroImg})`,backgroundRepeat:'no-repeat'}}>
         <div className="container">
           <div className="row gy-4">
             <div
@@ -35,7 +35,7 @@ export const Home = () => {
               data-aos="zoom-out"
               data-aos-delay="100"
             >
-              <img src={heroImg} className="img-fluid animated" alt="" />
+              {/* <img src={heroImg} className="img-fluid animated" alt="" /> */}
             </div>
           </div>
         </div>

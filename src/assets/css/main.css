@@ -941,6 +941,8 @@ section,
 
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  width: 900px;
+
 }
 
 @media (max-width: 640px) {
