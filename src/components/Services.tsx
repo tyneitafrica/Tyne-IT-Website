@@ -11,8 +11,13 @@ export const Services = () => {
       <div className="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>
-          Our expertise and personalized approach ensure that your unique
-          business needs are met efficiently and effectively
+          At TyneIT Consulting, we offer a comprehensive range of IT solutions
+          tailored to meet the unique needs of businesses across various
+          industries. From cutting-edge software development to reliable IT
+          support and strategic consulting, our services are designed to empower
+          your business through technology. We partner with you to deliver
+          scalable, efficient, and innovative solutions that drive success in a
+          rapidly evolving digital world.
         </p>
       </div>
 
@@ -28,16 +33,16 @@ export const Services = () => {
                 <i className="bi bi-window-fullscreen"></i>
               </div>
               <h4>
-                <Link to="/services/Web design & Development" className="">
+                <Link to="/services/web-dev" className="">
                   Web Development
                 </Link>
               </h4>
               <p>
-                Custom web solutions tailored to your business needs, from
-                responsive designs to powerful back-end systems using the latest
-                technologies like React and Next.js.
+                Our web design and development services are focused on creating
+                visually striking, user-friendly websites that enhance your
+                brand’s digital experience and drive customer engagement.
               </p>
-              <Link to="/services/Web design & Development" className="read-more">
+              <Link to="/services/web-dev" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>
@@ -56,14 +61,15 @@ export const Services = () => {
               <h4>
                 <a href="" className="">
                   {" "}
-                  UI/UX Design
+                  OEM reseller services
                 </a>
               </h4>
               <p>
-                Intuitive UI/UX design that enhances user satisfaction through
-                thoughtful, user-centered design and clear navigation.
+                At TyneIT Consulting, we specialize in providing comprehensive
+                OEM reseller services that empower businesses to expand their
+                product offerings and enhance their market presence.
               </p>
-              <Link to="/services/service1" className="read-more">
+              <Link to="/services/oem-reseller" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>
@@ -106,15 +112,16 @@ export const Services = () => {
               </div>
               <h4>
                 <a href="" className="">
-                  Optimization
+                  Data Analytics
                 </a>
               </h4>
               <p>
-                Optimize your website with our service for blazing-fast
-                performance, top-tier SEO, enhanced user experience, and
-                improved discoverability, turning visitors into loyal customers.
+                Our data analytics services empower your business with
+                actionable insights. We help you transform raw data into
+                meaningful information, enabling informed decision-making and
+                driving strategic growth.
               </p>
-              <Link to="/services/service1" className="read-more">
+              <Link to="/services/data-analytics" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>
@@ -131,15 +138,16 @@ export const Services = () => {
                 <i className="bi bi-people-fill"></i>
               </div>
               <h4>
-                <a href="" className="">
+                <Link to="/services/it-consulting" className="">
                   IT consulting
-                </a>
+                </Link>
               </h4>
               <p>
-                Strategic IT consulting to help businesses innovate, optimize
-                processes, and align technology with their goals.
+                Our IT consulting services help businesses harness the power of
+                technology to achieve their strategic goals. We provide expert
+                advice, tailored solutions, and strategic insights.
               </p>
-              <Link to="/services/service1" className="read-more">
+              <Link to="/services/it-consulting" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>
@@ -156,16 +164,16 @@ export const Services = () => {
                 <i className="bi bi-motherboard-fill"></i>
               </div>
               <h4>
-                <a href="" className="">
-                  Software Development
-                </a>
+                <Link to="/sercives/outsourcing" className="">
+                  Outsourcing Services
+                </Link>
               </h4>
               <p>
-                Custom software solutions developed to meet the unique needs of
-                your business, from enterprise applications to specialized
-                tools.
+                We connect you with skilled professionals, enabling you to focus
+                on core business activities while reducing costs and increasing
+                efficiency.
               </p>
-              <Link to="/services/service1" className="read-more">
+              <Link to="/sercives/outsourcing" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>
@@ -182,17 +190,15 @@ export const Services = () => {
                 <i className="bi bi-airplane"></i>
               </div>
               <h4>
-                <a href="" className="">
-                  Web deployment
-                </a>
+                <Link to="/services/e-commerce" className="">
+                  E-commerce
+                </Link>
               </h4>
               <p>
-                Choose from top deployment platforms like Vercel, Netlify, or
-                Render, and let us handle the rest. Our deployment service takes
-                care of setting up, configuring, and managing your site on your
-                selected platform, ensuring a smooth and efficient launch."
+                We design and develop robust e-commerce platforms that
+                streamline online transactions and enhance customer experiences.
               </p>
-              <Link to="/services/service1" className="read-more">
+              <Link to="/services/ecommerce-dev" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>
@@ -209,16 +215,42 @@ export const Services = () => {
                 <i className="bi bi-database-fill-gear"></i>
               </div>
               <h4>
-                <a href="" className="">
-                  Database Management
-                </a>
+                <Link to="./services/mobile-dev" className="">
+                  Mobile Dev
+                </Link>
               </h4>
               <p>
                 We handle setup, optimization, and maintenance to ensure your
                 databases are secure, fast, and scalable, so you can focus on
                 leveraging your data for growth
               </p>
-              <Link to="/services/service1" className="read-more">
+              <Link to="/services/mobile-dev" className="read-more">
+                <span>Read More</span>
+                <i className="bi bi-arrow-right"></i>
+              </Link>
+            </div>
+          </div>
+          <div
+            className="col-xl-4 col-md-6 d-flex"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div className="service-item position-relative">
+              <div className="icon">
+                <i className="bi bi-database-fill-gear"></i>
+              </div>
+              <h4>
+                <Link to="./services/equipment-leasing" className="">
+                  IT Equipment Leasing
+                </Link>
+              </h4>
+              <p>
+                Our IT equipment leasing services provide businesses with
+                flexible access to the latest technology without the upfront
+                investment. Enhance your operations with cost-effective
+                solutions that scale with your needs.
+              </p>
+              <Link to="/services/equiment-leasing" className="read-more">
                 <span>Read More</span>
                 <i className="bi bi-arrow-right"></i>
               </Link>

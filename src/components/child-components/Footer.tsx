@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 export const Footer = ()=>{
     return (
-        <footer id="footer" className="footer">
+        <footer id="footer" className="footer light-background">
 
       <div className="container footer-top">
         <div className="row gy-4">
@@ -23,7 +23,7 @@ export const Footer = ()=>{
               <li><i className="bi bi-chevron-right"></i> <Link to="/">Home</Link></li>
               <li><i className="bi bi-chevron-right"></i> <Link to="about">About us</Link></li>
               <li><i className="bi bi-chevron-right"></i> <Link to="services">Services</Link></li>
-              <li><i className="bi bi-chevron-right"></i> <Link to="portfolio">Portfolio</Link></li>
+              {/* <li><i className="bi bi-chevron-right"></i> <Link to="portfolio">Portfolio</Link></li> */}
             </ul>
           </div>
 

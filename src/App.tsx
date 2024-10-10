@@ -5,8 +5,8 @@ import 'aos/dist/aos.css';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Services } from './components/Services';
-import { Portfolio } from './components/Portfolio';
-import { ProjectDetails } from './components/ProjectDetails';
+// import { Portfolio } from './components/Portfolio';
+// import { ProjectDetails } from './components/ProjectDetails';
 import About from './components/About';
 import ScrollToTop from './components/ScrollToTop';
 import { WebDev } from './components/ServiceDetails/WebDev';
@@ -40,8 +40,8 @@ function App() {
           <Route index element={<Home />}></Route>
           <Route path='/about' element={<About/>}/>
           <Route path='services' element={<Services />} />
-          <Route path='portfolio'element={<Portfolio/>}/>
-          <Route path='portfolio/:projectname' element={<ProjectDetails/>}/>
+          {/* <Route path='portfolio'element={<Portfolio/>}/>
+          <Route path='portfolio/:projectname' element={<ProjectDetails/>}/> */}
           <Route path='/services/web-dev' element={<WebDev/>}/>
           <Route path='/services/mobile-dev' element={<MobileApp/>}/>
           <Route path='/services/ecommerce-dev' element={<EcommerceDev/>}/>

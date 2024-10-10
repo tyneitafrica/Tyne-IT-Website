@@ -468,8 +468,8 @@
 
 .about-text .features-list li i {
     font-size: 14px;
-    color: #212529;
-    background-color: #eaeaf2;
+    color: #fff;
+    background-color: var(--accent-color);
     width: 20px;
     height: 20px;
     line-height: 20px;
@@ -482,9 +482,7 @@
     transform: translateY(-50%);
 }
 
-.about-content .features-list li span:hover {
-    color: #fff;
-}
+
 
 .about-content .features-list li span:before {
     content: "";
@@ -497,14 +495,6 @@
     background-color: var(--accent-color);
     z-index: -1;
     transition: .5s;
-}
-
-.about-content .features-list li span:hover:before {
-    width: 100%;
-}
-
-.about-content .features-list li span:hover i {
-    background-color: #42b83e;
 }
 
 .about-content .features-list li span i {
@@ -557,10 +547,6 @@
     padding-left: 30px;
 }
 
-.about-text .features-list li:hover i {
-    background-color: var(--accent-color);
-    color: #fff;
-}
 
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
