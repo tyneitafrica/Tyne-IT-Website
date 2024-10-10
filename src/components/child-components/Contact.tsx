@@ -1,11 +1,17 @@
-
 const Contact = () => {
   return (
-    <section id="contact" className="contact section light-background">
+    <section id="contact" className="contact section">
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Satisfied? Hire us and get top-notch services</p>
+        <h2>Get In Touch With Us</h2>
+        <p>
+          We’re here to help you take your business to the next level with
+          tailored IT solutions and expert support. Whether you’re looking for
+          software development, IT consulting, or procurement services, our team
+          is ready to collaborate and create customized strategies that fit your
+          needs. Reach out today, and let’s start building the future of your
+          business together.
+        </p>
       </div>
       {/* End Section Title */}
 
@@ -13,7 +19,11 @@ const Contact = () => {
         <div className="row gy-4">
           <div className="col-lg-5">
             <div className="info-wrap">
-              <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div
+                className="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <i className="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
@@ -22,7 +32,11 @@ const Contact = () => {
               </div>
               {/* End Info Item */}
 
-              <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div
+                className="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <i className="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Us</h3>
@@ -31,7 +45,11 @@ const Contact = () => {
               </div>
               {/* End Info Item */}
 
-              <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div
+                className="info-item d-flex"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <i className="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
@@ -43,7 +61,7 @@ const Contact = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.8324272480311!2d36.8201294201171!3d-1.2998067016786863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1166edb58df7%3A0x332d7f34bb9d828e!2sDuplex%20Apartments%20-%20Kilimani!5e0!3m2!1sen!2ske!4v1724746664075!5m2!1sen!2ske"
                 frameBorder="0"
-                style={{ border: 0, width: '100%', height: '270px' }}
+                style={{ border: 0, width: "100%", height: "270px" }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

@@ -24,6 +24,8 @@
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #007bff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --footer-nav-color: #dcdcdc; /* The default color of the footer navmenu links */
+  --footer-nav-hover-color: #ffffff; /* Applied to footer navmenu links when they are hovered over or active */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -137,6 +139,7 @@ h6 {
   color: var(--default-color);
   background-color: white;
   padding: 15px 0;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, .05);
   transition: all 0.5s;
   z-index: 997;
 }
@@ -146,7 +149,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 48px;
   margin-right: 8px;
 }
 
@@ -863,6 +866,7 @@ section,
   padding-bottom: 60px;
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 
 .hero h1 {

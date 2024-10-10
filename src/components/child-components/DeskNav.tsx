@@ -123,9 +123,9 @@ export const DeskNav = () => {
           </li>
         </ul>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="portfolio">Portfolio</NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 };
