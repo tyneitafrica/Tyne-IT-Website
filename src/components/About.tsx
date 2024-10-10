@@ -39,22 +39,23 @@ const About = () => {
               <ul className="features-list">
                 <li data-aos="fade-up">
                   <span>
-                    <i className="fas fa-check"></i> Recommender Systems
+                    <i className="fas fa-check"></i> Innovative IT Solutions
                   </span>
                 </li>
                 <li data-aos="fade-up">
                   <span>
-                    <i className="fas fa-check"></i> Demand Prediction
+                    <i className="fas fa-check"></i> Strategic IT Consulting
                   </span>
                 </li>
                 <li data-aos="fade-up">
                   <span>
-                    <i className="fas fa-check"></i> Omnichannel Analytics
+                    <i className="fas fa-check"></i> Bridging Innovation and
+                    Insight
                   </span>
                 </li>
                 <li data-aos="fade-up">
                   <span>
-                    <i className="fas fa-check"></i> Lead Generation
+                    <i className="fas fa-check"></i> Client-Centric Approach
                   </span>
                 </li>
                 <li data-aos="fade-up">
@@ -86,16 +87,19 @@ const About = () => {
                 </p>
                 <ul className="features-list">
                   <li>
-                    <i className="bi bi-check"></i> Activate Listening
+                    <i className="bi bi-check"></i> Founding with a vision for
+                    Innovation
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> Brilliant Minds
+                    <i className="bi bi-check"></i> Expanding Global Presence
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> Better. Best. Wow!
+                    <i className="bi bi-check"></i> Trusted Partner for IT
+                    Solutions
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> Branding It Better!
+                    <i className="bi bi-check"></i> Continuous Growth and
+                    Evolution
                   </li>
                 </ul>
               </div>
@@ -113,16 +117,20 @@ const About = () => {
                 </p>
                 <ul className="features-list">
                   <li>
-                    <i className="bi bi-check"></i> Creating Results
+                    <i className="bi bi-check"></i> Empowering Business Through
+                    Technology
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> Expect More
+                    <i className="bi bi-check"></i> Delivering Innovative IT
+                    Solutions
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> Good Thinking
+                    <i className="bi bi-check"></i> Fostering Long-Term Client
+                    Success
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> In Real We Trust
+                    <i className="bi bi-check"></i> Driving Digital
+                    Transformation
                   </li>
                 </ul>
               </div>
@@ -137,20 +145,24 @@ const About = () => {
                   digital landscape. We specialize in custom software
                   development, IT support, and business analytics, working
                   closely with clients to deliver results that drive growth and
-                  efficiency. 
+                  efficiency.
                 </p>
                 <ul className="features-list">
                   <li>
-                    <i className="bi bi-check"></i> Stay Real. Always.
+                    <i className="bi bi-check"></i> Trusted IT Consulting
+                    Partner
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> We Have You Covered
+                    <i className="bi bi-check"></i> Experts in Digital
+                    Transformation
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> We Turn Heads
+                    <i className="bi bi-check"></i> Dedicated to Innovation and
+                    Growth
                   </li>
                   <li>
-                    <i className="bi bi-check"></i> Your Brand, Promoted
+                    <i className="bi bi-check"></i> Tailored Solutions for Every
+                    Business
                   </li>
                 </ul>
               </div>

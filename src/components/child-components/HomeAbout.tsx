@@ -32,19 +32,15 @@ const HomeAbout = () => {
             <ul>
               <li>
                 <i className="bi bi-check2-circle"></i>{" "}
-                <span>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </span>
+                <span>Innovative IT Solutions</span>
               </li>
               <li>
                 <i className="bi bi-check2-circle"></i>{" "}
-                <span>
-                  Duis aute irure dolor in reprehenderit in voluptate velit.
-                </span>
+                <span>Strategic IT Consulting</span>
               </li>
               <li>
                 <i className="bi bi-check2-circle"></i>{" "}
-                <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
+                <span>Client-Centric Approach</span>
               </li>
             </ul>
           </div>
