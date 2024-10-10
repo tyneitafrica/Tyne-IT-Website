@@ -202,9 +202,9 @@ export const MobileNav = () => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <li>
+        {/* <li>
           <NavLink to="portfolio">Portfolio</NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

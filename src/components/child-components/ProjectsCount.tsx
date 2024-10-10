@@ -52,6 +52,9 @@ const ProjectsCount: React.FC = () => {
 
   return (
     <section id="projects" className="container my-5">
+      <div className="container section-title" data-aos="fade-up">
+        <h2>Our Stats</h2>
+      </div>
       <div className="row gap-3 justify-content-center text-center">
         <div className="col-md-4 stat-container" data-aos="fade-up" data-aos-delay="400">
           <div className="count-container light-background">

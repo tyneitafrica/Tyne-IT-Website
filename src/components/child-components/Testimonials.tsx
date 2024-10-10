@@ -1,7 +1,13 @@
 import React from 'react';
 import 'swiper/css';
 import Swiper from 'swiper/bundle';
-import Img from "/testimonials-1.jpg"
+import Img1 from "/testimonials-1.jpg"
+import Img2 from "/testimonials-2.jpg"
+import Img3 from "/testimonials-3.jpg"
+import Img4 from "/testimonials-4.jpg"
+import Img5 from "/testimonials-5.jpg"
+
+
 
 const Testimonials = () => {
   React.useEffect(() => {
@@ -33,7 +39,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section id="testimonials" className="testimonials section light-background">
+    <section id="testimonials" className="testimonials section ">
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
@@ -46,8 +52,8 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img} className="testimonial-img" alt="James Karanja" />
-                <h3>James Karanja</h3>
+                <img src={Img1} className="testimonial-img" alt="Saul Goodman" />
+                <h3>Saul Goodman</h3>
                 <h4>Small Business Owner</h4>
                 <div className="stars">
                   <i className="bi bi-star-fill"></i>
@@ -66,8 +72,8 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img} className="testimonial-img" alt="Susan Njeri" />
-                <h3>Susan Njeri</h3>
+                <img src={Img2} className="testimonial-img" alt="Susan Njeri" />
+                <h3>Sara Wilson</h3>
                 <h4>Marketing Manager</h4>
                 <div className="stars">
                   <i className="bi bi-star-fill"></i>
@@ -86,8 +92,8 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img} className="testimonial-img" alt="Michael Mwangi" />
-                <h3>Michael Mwangi</h3>
+                <img src={Img3} className="testimonial-img" alt="Michael Mwangi" />
+                <h3>Jena Karlis</h3>
                 <h4>Entrepreneur</h4>
                 <div className="stars">
                   <i className="bi bi-star-fill"></i>
@@ -106,8 +112,8 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img} className="testimonial-img" alt="Alice Ndungu" />
-                <h3>Alice Ndungu</h3>
+                <img src={Img4} className="testimonial-img" alt="Alice Ndungu" />
+                <h3>Kerry Larson</h3>
                 <h4>Freelancer</h4>
                 <div className="stars">
                   <i className="bi bi-star-fill"></i>
@@ -126,8 +132,8 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img} className="testimonial-img" alt="Peter Kamau" />
-                <h3>Peter Kamau</h3>
+                <img src={Img5} className="testimonial-img" alt="Peter Kamau" />
+                <h3>Peter Notion</h3>
                 <h4>Corporate Client</h4>
                 <div className="stars">
                   <i className="bi bi-star-fill"></i>
