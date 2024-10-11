@@ -10,7 +10,7 @@ export function SoftwareInstallation() {
           <div className="overview-image">
             <div className="image">
               <img
-                src="/it-service2.png"
+                src="/software.jpeg"
                 alt="Web Design & Development"
                 className="img-fluid"
               />
