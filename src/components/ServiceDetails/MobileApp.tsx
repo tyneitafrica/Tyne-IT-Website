@@ -10,7 +10,7 @@ export function MobileApp() {
           <div className="overview-image">
             <div className="image">
               <img
-                src="/it-service2.png"
+                src="/mobile.jpeg"
                 alt="Web Design & Development"
                 className="img-fluid"
               />

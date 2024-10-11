@@ -10,7 +10,7 @@ export function Courses() {
           <div className="overview-image">
             <div className="image">
               <img
-                src="/it-service2.png"
+                src="/learning.jpeg"
                 alt="Web Design & Development"
                 className="img-fluid"
               />

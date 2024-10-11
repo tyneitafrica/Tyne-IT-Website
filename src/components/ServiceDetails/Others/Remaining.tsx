@@ -11,7 +11,7 @@ export function Remaining({service}: {service: Service}) {
             <div className="overview-image">
               <div className="image">
                 <img
-                  src="/it-service2.png"
+                  src="/software-mgt.jpeg"
                   alt="Web Design & Development"
                   className="img-fluid"
                 />

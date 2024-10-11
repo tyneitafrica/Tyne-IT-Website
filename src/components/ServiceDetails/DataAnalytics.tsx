@@ -10,7 +10,7 @@ export function DataAnalytics() {
           <div className="overview-image">
             <div className="image">
               <img
-                src="/it-service2.png"
+                src="/data-analytics.jpeg"
                 alt="Web Design & Development"
                 className="img-fluid"
               />

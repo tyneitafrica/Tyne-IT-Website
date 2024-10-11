@@ -10,7 +10,7 @@ export function WebDev() {
           <div className="overview-image">
             <div className="image">
               <img
-                src="/it-service2.png"
+                src="/it-service.jpeg"
                 alt="Web Design & Development"
                 className="img-fluid"
               />
