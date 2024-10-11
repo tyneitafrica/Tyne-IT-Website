@@ -1,4 +1,4 @@
-import heroImg from "../assets/img/hero-img.png";
+import heroImg from "/it-service2.png";
 
 import Contact from "./child-components/Contact";
 import { CountriesWeWork } from "./child-components/CountriesWeWork";

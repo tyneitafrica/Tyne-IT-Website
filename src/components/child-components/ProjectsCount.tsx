@@ -40,7 +40,7 @@ const ProjectsCount: React.FC = () => {
 
           if (projectCountElement) countUp(projectCountElement, 0, 50, 2000);
           if (clientsCountElement) countUp(clientsCountElement, 0, 20, 2000);
-          if (awardsCountElement) countUp(awardsCountElement, 0, 5, 2000);
+          if (awardsCountElement) countUp(awardsCountElement, 0, 1, 2000);
           if (partnersCountCountElement) countUp(partnersCountCountElement, 0, 14, 2000);
         }
       });
