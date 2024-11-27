@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 import { Services } from './components/Services';
+import { FaWhatsapp } from "react-icons/fa6";
 // import { Portfolio } from './components/Portfolio';
 // import { ProjectDetails } from './components/ProjectDetails';
 import About from './components/About';
@@ -33,6 +34,7 @@ function App() {
   }, []);
 
   return (
+    <div>
     <Router>
       <ScrollToTop/>
       <Routes>
@@ -61,6 +63,21 @@ function App() {
         </Route>
       </Routes>
     </Router>
+
+    {/* added a whatsapp talk to  button */}
+    <div>
+      <a 
+        href="https://api.whatsapp.com/send?phone=254728247567&text=Hello%20there"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-success rounded-circle position-fixed bottom-0 end-0 m-4 d-flex align-items-center justify-content-center shadow"
+        style={{ width: '60px', height: '60px' }}
+        title='Contact Us'
+      >
+      <FaWhatsapp size={50}/>
+      </a>
+    </div>
+    </div>
   )
 }
 
