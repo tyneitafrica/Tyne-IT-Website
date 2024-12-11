@@ -1,11 +1,11 @@
 import React from 'react';
 import 'swiper/css';
 import Swiper from 'swiper/bundle';
-import Img1 from "/testimonials-1.jpg"
-import Img2 from "/testimonials-2.jpg"
-import Img3 from "/testimonials-3.jpg"
-import Img4 from "/testimonials-4.jpg"
-import Img5 from "/testimonials-5.jpg"
+// import Img1 from "/testimonials-1.jpg"
+// import Img2 from "/testimonials-2.jpg"
+// import Img3 from "/testimonials-3.jpg"
+// import Img4 from "/testimonials-4.jpg"
+// import Img5 from "/testimonials-5.jpg"
 
 
 
