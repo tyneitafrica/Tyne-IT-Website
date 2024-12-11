@@ -13,6 +13,12 @@ export function VendorManagement() {
                 src="/it-service2.png"
                 alt="Web Design & Development"
                 className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "3%",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>
@@ -28,10 +34,12 @@ export function VendorManagement() {
               </p>
               <ul className="features-list list-unstyled">
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Performance Monitoring
+                  <i className="bi bi-patch-check-fill me-2"></i> Performance
+                  Monitoring
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"> </i> Vendor Selection
+                  <i className="bi bi-patch-check-fill me-2"> </i> Vendor
+                  Selection
                 </li>
                 <li>
                   <i className="bi bi-patch-check-fill me-2"></i> CRM

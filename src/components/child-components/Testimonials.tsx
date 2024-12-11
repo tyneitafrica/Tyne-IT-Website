@@ -52,8 +52,8 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img1} className="testimonial-img" alt="Saul Goodman" />
-                <h3>Saul Goodman</h3>
+                {/* <img src={Img1} className="testimonial-img" alt="Saul Goodman" /> */}
+                <h3>Peter Williams</h3>
                 <h4>Small Business Owner</h4>
                 <div className="stars">
                   <i className="bi bi-star-fill"></i>
@@ -72,8 +72,8 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img2} className="testimonial-img" alt="Susan Njeri" />
-                <h3>Sara Wilson</h3>
+                {/* <img src={Img2} className="testimonial-img" alt="Susan Njeri" /> */}
+                <h3>Claudine Muhire</h3>
                 <h4>Marketing Manager</h4>
                 <div className="stars">
                   <i className="bi bi-star-fill"></i>
@@ -92,7 +92,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img3} className="testimonial-img" alt="Michael Mwangi" />
+                {/* <img src={Img3} className="testimonial-img" alt="Michael Mwangi" /> */}
                 <h3>Jena Karlis</h3>
                 <h4>Entrepreneur</h4>
                 <div className="stars">
@@ -112,7 +112,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img4} className="testimonial-img" alt="Alice Ndungu" />
+                {/* <img src={Img4} className="testimonial-img" alt="Alice Ndungu" /> */}
                 <h3>Kerry Larson</h3>
                 <h4>Freelancer</h4>
                 <div className="stars">
@@ -132,7 +132,7 @@ const Testimonials = () => {
 
             <div className="swiper-slide">
               <div className="testimonial-item">
-                <img src={Img5} className="testimonial-img" alt="Peter Kamau" />
+                {/* <img src={Img5} className="testimonial-img" alt="Peter Kamau" /> */}
                 <h3>Peter Notion</h3>
                 <h4>Corporate Client</h4>
                 <div className="stars">

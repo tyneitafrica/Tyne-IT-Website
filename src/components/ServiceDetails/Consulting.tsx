@@ -13,6 +13,12 @@ export function Consulting() {
                 src="/it-service2.png"
                 alt="Web Design & Development"
                 className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "3%",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>
@@ -30,13 +36,16 @@ export function Consulting() {
               </p>
               <ul className="features-list list-unstyled">
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Technology Roadmapping
+                  <i className="bi bi-patch-check-fill me-2"></i> Technology
+                  Roadmapping
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"> </i>  Cost Optimization
+                  <i className="bi bi-patch-check-fill me-2"> </i> Cost
+                  Optimization
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Digital Optimization
+                  <i className="bi bi-patch-check-fill me-2"></i> Digital
+                  Optimization
                 </li>
               </ul>
             </div>

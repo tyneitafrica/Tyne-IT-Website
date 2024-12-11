@@ -13,6 +13,12 @@ export function MobileApp() {
                 src="/mobile.jpeg"
                 alt="Web Design & Development"
                 className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "3%",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>

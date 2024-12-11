@@ -1,5 +1,6 @@
 {
   "name": "tyne-job-website",
+  "homepage": "https://www.tyneitconsulting.africa/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

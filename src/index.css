@@ -427,6 +427,7 @@
 
 .about-image {
     text-align: center;
+    border-radius: 10px;
 }
 
 .about-content .sub-title {

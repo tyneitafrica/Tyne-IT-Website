@@ -10,7 +10,7 @@ const About = () => {
               <img
                 src={Img}
                 alt="About Us Image"
-                style={{ maxWidth: "100%", height: "auto" }}
+                style={{ maxWidth: "100%", height: "auto", borderRadius: "3%", objectFit: "cover" }}
               />
             </div>
           </div>

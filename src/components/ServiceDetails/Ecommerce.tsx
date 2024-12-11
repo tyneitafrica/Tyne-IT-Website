@@ -13,6 +13,12 @@ export function EcommerceDev() {
                 src="/it-service2.png"
                 alt="Web Design & Development"
                 className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "3%",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>
@@ -37,13 +43,15 @@ export function EcommerceDev() {
                   <i className="bi bi-patch-check-fill me-2"></i> UI / UX Design
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Payment gateway integration 
+                  <i className="bi bi-patch-check-fill me-2"></i> Payment
+                  gateway integration
                 </li>
                 <li>
                   <i className="bi bi-patch-check-fill me-2"></i> SEO
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Support and Maintenance
+                  <i className="bi bi-patch-check-fill me-2"></i> Support and
+                  Maintenance
                 </li>
                 <li>
                   <i className="bi bi-patch-check-fill me-2"></i> Flutter

@@ -13,6 +13,12 @@ export function SchoolSupport() {
                 src="/it-service2.png"
                 alt="Web Design & Development"
                 className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "3%",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>
@@ -27,21 +33,21 @@ export function SchoolSupport() {
                 ensuring secure and reliable networks for teachers and students.
               </p>
               <ul className="features-list list-unstyled">
-             
-
-
-
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i>  Hardware and software supportRoadmapping
+                  <i className="bi bi-patch-check-fill me-2"></i> Hardware and
+                  software supportRoadmapping
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"> </i> Network Management
+                  <i className="bi bi-patch-check-fill me-2"> </i> Network
+                  Management
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Data Backup & Recovery
+                  <i className="bi bi-patch-check-fill me-2"></i> Data Backup &
+                  Recovery
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Cyber security solutions
+                  <i className="bi bi-patch-check-fill me-2"></i> Cyber security
+                  solutions
                 </li>
               </ul>
             </div>

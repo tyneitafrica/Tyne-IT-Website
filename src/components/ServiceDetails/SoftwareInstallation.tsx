@@ -13,6 +13,12 @@ export function SoftwareInstallation() {
                 src="/software.jpeg"
                 alt="Web Design & Development"
                 className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "3%",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>
@@ -28,16 +34,20 @@ export function SoftwareInstallation() {
               </p>
               <ul className="features-list list-unstyled">
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Chatbot integration
+                  <i className="bi bi-patch-check-fill me-2"></i> Chatbot
+                  integration
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"> </i> Database Migration
+                  <i className="bi bi-patch-check-fill me-2"> </i> Database
+                  Migration
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> CRM Integration
+                  <i className="bi bi-patch-check-fill me-2"></i> CRM
+                  Integration
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> API Integration
+                  <i className="bi bi-patch-check-fill me-2"></i> API
+                  Integration
                 </li>
               </ul>
             </div>

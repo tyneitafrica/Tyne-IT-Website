@@ -13,6 +13,12 @@ export function ServiceDetails() {
                 src="/it-service2.png"
                 alt="Web Design & Development"
                 className="img-fluid"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "3%",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>
@@ -26,7 +32,8 @@ export function ServiceDetails() {
               </p>
               <ul className="features-list list-unstyled">
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Responsive Design
+                  <i className="bi bi-patch-check-fill me-2"></i> Responsive
+                  Design
                 </li>
                 <li>
                   <i className="bi bi-patch-check-fill me-2"></i> UI / UX Design
@@ -36,13 +43,16 @@ export function ServiceDetails() {
                   Development
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Laravel Development
+                  <i className="bi bi-patch-check-fill me-2"></i> Laravel
+                  Development
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> React Development
+                  <i className="bi bi-patch-check-fill me-2"></i> React
+                  Development
                 </li>
                 <li>
-                  <i className="bi bi-patch-check-fill me-2"></i> Angular Development
+                  <i className="bi bi-patch-check-fill me-2"></i> Angular
+                  Development
                 </li>
               </ul>
             </div>
